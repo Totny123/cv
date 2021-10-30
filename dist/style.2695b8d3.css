@@ -36,6 +36,14 @@
     height: 280px !important;
   }
 }
+@keyframes rotate {
+  0% {
+    transform: translate(-50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%) rotate(360deg);
+  }
+}
 
 
-/*# sourceMappingURL=style.ac35f508.css.map */
+/*# sourceMappingURL=style.2695b8d3.css.map */

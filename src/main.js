@@ -26,7 +26,7 @@ let string = `/*
 /*
  *现在我们给八卦加上魔丸和灵珠(两个圆球)
 **/
-#demo::before{
+#demo::after{
   content: "";
   display: block;
   width: 50%;
@@ -34,13 +34,19 @@ let string = `/*
   background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 25%, rgba(0,0,0,1) 25%, rgba(0,0,0,1) 100%);
   border-radius: 50%;
 }
-#demo::after{
+#demo::before{
   content: "";
   display: block;
   width: 50%;
   height: 50%;
   background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 25%, rgba(255,255,255,1) 25%, rgba(255,255,255,1) 100%);
   border-radius: 50%;
+}
+/*
+ *最后让太极转起来吧！
+**/
+#demo {
+  animation: rotate 5s linear infinite;
 }`;
 let string2 = ``;
 let n = 0;
