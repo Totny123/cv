@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+#demo {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translate(-50%);
+}
+#demo::before {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#demo::after {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+@media (max-width: 500px) {
+  #text {
+    height: 50vh;
+    overflow: auto;
+  }
+  #demo {
+    position: relative;
+    width: 280px !important;
+    height: 280px !important;
+  }
+}
+
+
+/*# sourceMappingURL=style.ac35f508.css.map */
